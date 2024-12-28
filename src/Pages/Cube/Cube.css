@@ -1,0 +1,53 @@
+.Cube{
+    display: flex;
+    background: black;
+    height: 100vh;
+    padding: 16px;
+    justify-content: center;
+
+}
+
+
+
+.CubeCanvas{
+
+    #colorRange {
+        -webkit-appearance: none;
+        width: 130px;
+        height: 16px;
+        background-color: rgba(226, 0, 116, 0.74);
+        border-radius: 50px;
+        position: relative;
+    }
+
+    #colorRange::after {
+        position: absolute;
+        top: 0px;
+        left: calc(50% - 10px);
+        font-size: 12px;
+        color: #fff;
+    }
+
+    #colorRange::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 15px;
+        height: 15px;
+        background-color: #ffffff88;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+
+
+
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    input{
+        transform: rotate(-90deg);
+        width: 150px;
+    }
+}

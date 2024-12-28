@@ -1,0 +1,133 @@
+.Pyramid{
+    display: flex;
+    background: black;
+    height: 100vh;
+    padding: 16px;
+    justify-content: center;
+}
+
+.PyramidCanvas {
+
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    .controls{
+        display: flex;
+        gap: 30px;
+    }
+
+    #redRange {
+        -webkit-appearance: none;
+        width: 130px;
+        height: 16px;
+        background-color: rgba(176, 20, 20, 0.721);
+        border-radius: 50px;
+        position: relative;
+    }
+
+    #redRange::after {
+        content: "red";
+        position: absolute;
+        top: 0px;
+        left: calc(50% - 10px);
+        font-size: 12px;
+        color: #fff;
+    }
+
+    #redRange::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 15px;
+        height: 15px;
+        background-color: #ffffff88;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+
+    #greenRange {
+        -webkit-appearance: none;
+        width: 130px;
+        height: 16px;
+        background-color: rgba(36, 176, 20, 0.721);
+        border-radius: 50px;
+        position: relative;
+    }
+
+    #greenRange::after {
+        content: "green";
+        position: absolute;
+        top: 0px;
+        left: calc(50% - 10px);
+        font-size: 12px;
+        color: #fff;
+    }
+
+    #greenRange::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 15px;
+        height: 15px;
+        background-color: #ffffff88;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+
+    #blueRange {
+        -webkit-appearance: none;
+        width: 130px;
+        height: 16px;
+        background-color: rgba(20, 28, 176, 0.721);
+        border-radius: 50px;
+        position: relative;
+    }
+
+    #blueRange::after {
+        content: "blue";
+        position: absolute;
+        top: 0px;
+        left: calc(50% - 10px);
+        font-size: 12px;
+        color: #fff;
+    }
+
+    #blueRange::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 15px;
+        height: 15px;
+        background-color: #ffffff88;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+
+    #alphaRange {
+        -webkit-appearance: none;
+        width: 130px;
+        height: 16px;
+        background-color: rgba(77, 77, 83, 0.582);
+        border-radius: 50px;
+        position: relative;
+    }
+
+    #alphaRange::after {
+        content: "alpha";
+        position: absolute;
+        top: 0px;
+        left: calc(50% - 10px);
+        font-size: 12px;
+        color: #fff;
+    }
+
+    #alphaRange::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 15px;
+        height: 15px;
+        background-color: #ffffff88;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+}
